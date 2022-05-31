@@ -4,5 +4,6 @@ for i in a:
     print(i, end=' ')
 
 
-c = 666
+b = 5
+print(b)
 
