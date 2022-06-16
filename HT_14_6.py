@@ -6,26 +6,34 @@ class Pet:
         self.master = master
 
     def run(self):
-        return f"{self.name} бежит, ее возраст {self.age}"
+            return f"{self.name} бежит, ее возраст {self.age}"
     def jump(self):
-        return f"{self.name} прыгает"
+            return f"{self.name} прыгает"
     def bithday(self):
-        self.age += 1
-        print(f"Добавили +1 = {self.age} лет")
+            self.age += 1
+            print(f"Добавили +1 = {self.age} лет")
     def sleep(self):
-        return f"{self.name} спит"
+            return f"{self.name} спит"
 
 class Dog(Pet):
+    def __init__(self, name, age, master):
+        super().__init__(name, age, master)
 
     def bark(self):
         print(f"{self.name} лает")
 
 class Cat(Pet):
 
+    def __init__(self, name, age, master):
+        super().__init__(name, age, master)
+
     def meow(self):
         print(f"Кот мяукает")
 
 class Parrot(Pet):
+
+    def __init__(self, name, age, master):
+        super().__init__(name, age, master)
 
     def fly(self, hight):
         print(f"Попугай летает на высоте {hight} метров")
